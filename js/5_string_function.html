@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stirng function</title>
+</head>
+<body>
+
+    <h3>String Functions</h3>
+
+    <script>
+        var line="John is a good boy";
+        console.log(line.length);
+
+        console.log(line.indexOf("oo")) ; //find the first index of
+        console.log(line.lastIndexOf("o")) ; //find the last index of
+
+        console.log(line.slice(2,6)); //last index is not included
+        console.log(line.substring(2,6));
+        //slice allowed negate indexes
+        console.log(line.substr(2,6));//2nd parameter is lenght here it means 6th characters starting from 2
+        console.log(line.toUpperCase());
+        console.log(line.toLowerCase());
+
+        var data=" Today is a good day to       outside"
+        console.log(data);
+        console.log(data.trim());//removes leading and trailing spaces
+        console.log(line);
+        var result=line.replace("John","Peter");
+        console.log(result);
+        console.log(line);
+
+        console.log(line.charAt(3));
+        console.log(line[5]);
+        console.log(line.charCodeAt(3));
+    </script>
+    
+</body>
+</html>

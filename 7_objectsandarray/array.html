@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array in JS</title>
+</head>
+<body>
+
+    <h2>Array in JS</h2>
+
+    <script>
+        //Arrray can keep more than one similar or non-similar items
+
+        let ageArray=[23,34,56,31];
+        let name=['john','peter','jane'];
+
+        let random=[12,"peter",22.5];
+        console.log(random);
+        console.log(typeof(random));
+        console.log(random.length);
+        random=random.sort();//sort the array;
+        console.log(random);
+        random.push(88888.8);
+
+        console.log('**random after deletion***');
+        random.splice(0,2);//index,no. of items to be removed or added
+        console.log(random);
+
+
+        console.log(random[2]);
+        console.log(random[3]);
+
+        let deptArray=new Array('phy','che','math');
+        console.log(deptArray);
+
+        //array of objects is made in js
+
+        let student1 ={
+            name:"peter",
+            rollNo: 567,
+            age: 23
+         };
+         let student2 ={
+            name:"john",
+            rollNo: 567,
+            age: 23
+         };
+
+        students=[student1,student2];
+        console.log(students);
+
+
+        console.log(name);
+    </script>
+    
+</body>
+</html>

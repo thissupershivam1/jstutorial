@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope in JS</title>
+</head>
+<body>
+    <script>
+        //If we decrate variable directly inside script tag then it takes global scope
+        var name="Peter";
+        var name="John";//variable re-declaration with var keyward does not give error
+        console.log(name);
+
+        function f1(){
+            var name2="Jane";
+        }
+        
+        // console.log(name2); this will give error because it has scope within the function
+        let output ="Hello";
+        // let output="Hello2"; let will not allow redeclaration of same variable;
+        {
+            let output="New Hello";//but let will allow redeclaration inside function or block;
+            console.log(output);
+        }
+        console.log(output);
+
+        const final="This cannot be modified,it is constant";
+        console.log(final);
+        
+    </script>
+
+</body>
+</html>

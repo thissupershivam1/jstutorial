@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function in JS</title>
+</head>
+<body>
+    <h2>Function in JS</h2>
+        <ul>
+            <li>Function helps us avoid repeating code over and over</li>
+            <li>Function is a reusable code</li>
+            <li>Function start with function keyward</li>
+            <li>function can take or not take parameters</li>
+            <li>Function may or may not have a return type</li>
+            <li>Code inside a function only gets executed when its called</li>
+
+        </ul>
+
+        <script>
+            //definition of a function 
+            function addNumbers(){
+                console.log(5+7);
+            }
+            addNumbers();//calling of function
+
+
+            //function with two parameters
+
+            function addTwoNum(num1,num2){
+                let result=num1+num2;
+                console.log(result);
+            }
+
+            addTwoNum(3,4);
+
+            function addTwoNumreturn(num1,num2){
+                let result=num1+num2;
+                return result;
+                console.log(result);
+            }
+
+            let output=addTwoNumreturn(99,1);
+            console.log(output);
+
+
+            //default value of parameter is used when parameter is not passed;
+
+
+        </script>
+    
+</body>
+</html>

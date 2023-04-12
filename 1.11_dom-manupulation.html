@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom manupulation in JS</title>
+</head>
+<body>
+
+    <div id="header" class="layout">
+
+    </div>
+
+    <div id="main" class="layout">
+
+        <section id="left">
+            <ul class="left-menu">
+                <li>Products</li>
+                <li>Categories</li>
+                <li>Orders</li>
+            </ul>
+        </section>
+        <section id="center">
+            <h3>Hello world</h3>
+            <input type="text" id="fullName" placeholder="fullname" value="John Doe">
+        </section>
+        <section id="right">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, labore?</p>
+        </section>
+
+
+    </div>
+    <div id="footer" class="layout">
+        @All rights reserved.
+
+    </div>
+
+    <script>
+        let mainelement= document.getElementById('main');
+        console.log(mainelement);
+        let fullName= document.getElementById('fullName');
+        console.log(fullName.value);
+        let rightelement= document.getElementById('right');
+        console.log(rightelement);
+
+        console.log(rightelement.innerHTML);
+
+        let layoutelements=document.getElementsByClassName('layout');
+
+        console.log(layoutelements);
+        console.log(layoutelements[2]);
+
+        let tagElement=document.getElementsByTagName('li');
+        console.log(tagElement);
+        console.log(tagElement[2]);
+        console.log(tagElement[2].innerHTML);
+
+
+        // let selectQuery=document.querySelector('.layout');
+        // console.log(selectQuery);
+        // let selectQuery=document.querySelector('section');
+        // console.log(selectQuery);\
+
+
+        // let selectQuery=document.querySelector('#left > ul');
+        // console.log(selectQuery);
+
+        let selectQuery=document.querySelectorAll('#left > .left-menu >li');
+        console.log(selectQuery);
+    </script>
+    
+</body>
+</html>
