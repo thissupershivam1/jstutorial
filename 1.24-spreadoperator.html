@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spread operator</title>
+</head>
+<body>
+
+    <h1>Hello ES6</h1>
+
+    <script>
+        let names=['Ram','Shyam','Ravi'];
+        names=[...names,'Sam','Peter'];
+        console.log(names);
+
+
+        let empArr=[
+            {
+                id:1,
+                name:'john',
+                age:30
+            },
+            {
+                id:2,
+                name:'jo',
+                age:3
+            },
+            {
+                id:3,
+                name:'jane',
+                age:33
+            }
+        ];
+        for(let i=0;i<empArr.length;i++){
+            
+            
+            console.log(empArr[i]);
+        }
+
+        empArr.forEach((emp,index,empArr)=>{
+            console.log(empArr);
+            console.log(`${index}-${JSON.stringify(emp)}`)
+        });
+
+
+        //module in js
+
+        export let num1=25;
+        export let add=()=>5+7;
+        export function mul() {5*2};
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dat and Time</title>
+</head>
+<body>
+    <h2 id="datatime">Data and time</h2>
+    <div >
+        
+
+    </div>
+
+    <script>
+       
+        setInterval(function test(){
+            let currentDataTime =new Date();
+        console.log(currentDataTime);
+            document.querySelector("#datatime").innerHTML=currentDataTime;
+
+        },1000);
+
+        let date1=new date(0);
+        console.log(date1);
+        date1=new date(5000);
+        console.log(date1);
+
+        
+        
+
+
+    </script>
+    
+</body>
+</html>

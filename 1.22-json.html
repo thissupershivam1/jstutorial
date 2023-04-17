@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    <h2>JSON stands for Javascript object notation</h2>
+    <p>JSON is used for exchanging data over network/internet</p>
+
+    <script>
+        let empOne={
+            name:"John",
+            age:22,
+            address:{
+                city:"xyz",
+                pincode: 223344
+            }
+        };
+        console.log(empOne);
+
+        let empStr=JSON.stringify(empOne);//convert it into string
+
+        console.log(empStr);
+
+        let myObj=JSON.parse(empStr);//convert a valid json string to json object;
+    </script>
+    
+</body>
+</html>
